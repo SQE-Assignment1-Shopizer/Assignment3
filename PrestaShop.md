@@ -96,3 +96,22 @@ To optimize prestashop performance you need to
 
 •	Optimizing Images
 
+**Stability**
+
+Prestashop ensures stability as it is "well tested". In its latest version all three type of testing is done for automation i.e., **unit testing, integration testing, end to end testing,** .
+
+Introducing Symfony in prestashop in its latest relaese allows us to get rid of the maintenance workload for a custom framework, which consumes a large amount of time that could be better spent working on what PrestaShop actually does best: managing a cart, handling orders, calculating prices and taxes, generating invoices, etc. Using a proven and popular open-source framework allows us to focus on our core business code with greater efficiency, while enjoying the stability of a globally recognized framework.
+
+
+**Fault Tolerance**
+
+A patch release is scheduled when a “trigger bug” is reported:
+
+- A major bug in maintained branch
+- A security issue in maintained branch
+For example, let’s see 1.7.7.0 lifecycle:
+
+Until PrestaShop 1.7.7.0 is released, the maintained branch remains 1.7.6.x.
+This means that work on a new 1.7.6 release will start if a community contributor or the QA team reports a major regression in PrestaShop 1.7.6 or a security issue.
+If minor or trivial regressions are reported for PrestaShop 1.7.6, they are scheduled to be fixed in **next minor version**. Minor or trivial bugs are considered not important enough to trigger a patch release process.
+
