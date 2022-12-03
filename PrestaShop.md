@@ -1,5 +1,7 @@
 **PrestaShop**
 
+https://docs.prestashop-project.org/1-6-documentation/english-documentation
+
 
 PrestaShop is an open-source eCommerce content management system that helps you easily create, manage, and design an online store for free. There are currently 300,000+ live websites using PrestaShop, making it the 6th most popular open-source platform.
 The platform is known for its ease of use, making it suitable for business owners who want to make money online with minimum website development knowledge. 
