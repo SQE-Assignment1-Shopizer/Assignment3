@@ -81,11 +81,18 @@ When writing open-source code, consistency is even more crucial because bug-fixi
 **Performance:** 
 
 To optimize prestashop performance you need to
+
 •	Choose the best web service hosting provider
+
 •	Set up content delivery network(CDN)
+
 •	Smarty Cache
-•	Combine, Compress and Cache (The CCC section of the Performance section in your PrestaShop admin can be used to activate CSS, JS, and HTML compression, and caching, in addition to minifying HTML automatically.)
+
+•	Combine, Compress and Cache (The CCC section of the Performance section in your PrestaShop admin can be used to activate CSS, JS, and HTML compression, and caching, in addition to minifying HTML automatically)
+
 •	Media Servers
+
 •	Use latest PHP Version
+
 •	Optimizing Images
 
