@@ -30,3 +30,19 @@ Vue Storefront is a standalone Progressive Web Application solution for web stor
 ### MicroServices Architecture
 Vue Store Front has microservices architecture breaking it into multiple modules. Each module has its own specific responsibilities but communicates with others to form a unified system
 ![vue](https://user-images.githubusercontent.com/82566358/205505058-2a1e2824-1a1b-4205-ae26-733445ae0c5f.png)
+
+Micro Servicing and Modularity afftes the non functional requirements greatly
+
+>* ##### Reliability
+         Micro Services and modularity increases reliability. Any bug in any module (e.g. memory leak) will not  bring down the entire function.
+>* ##### Maintainability
+         The adoption of new technologies becomes easier Because changes to frameworks or languages will not affect the entire application.Each Update will not require the delpoyment of the entire application.Moreover each service is relatively small and so is easier to understand and change
+
+>* ##### Scalability
+         Modular applications are easy to scale when various modules have incompatible resource requirements, continuous deployment is easy.
+
+>* ##### Testability
+         Since the services are smaller, they are faster to test
+
+>* ##### Fault Tolerance
+         Improved fault isolation. For example, if there is a memory leak in one service then only that service will be affected. The other services will continue to handle requests. In comparison, one misbehaving component of a monolithic architecture can bring down the entire system.
