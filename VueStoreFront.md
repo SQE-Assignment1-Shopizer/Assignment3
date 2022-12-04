@@ -25,4 +25,4 @@ Vue Storefront is a standalone Progressive Web Application solution for web stor
 >*** A valid JSON manifest of the app’s info, with the correct info filled in
 >*** A set of properly named icons, at multiple sizes
 >*** A secure, HTTPS connection
->*Vue Store Front only supports one CI/CD tool which is Githiub Actions
+>* Vue Store Front only supports one CI/CD tool which is Githiub Actions
