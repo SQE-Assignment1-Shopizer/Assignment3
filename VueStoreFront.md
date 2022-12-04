@@ -46,7 +46,25 @@ Micro Servicing and Modularity afftes the non functional requirements greatly
 
 >* ##### Fault Tolerance
          Improved fault isolation. For example, if there is a memory leak in one service then only that service will be affected. The other services will continue to handle requests. In comparison, one misbehaving component of a monolithic architecture can bring down the entire system.
-         
- >* Single Reponsibility (SOLID Principles)
+
+#### Nuxt.js
+     Most integrations in Vue Storefront ask you to register a Nuxt.js plugin or module in the nuxt.config.js file. These extend the Application context and add special handlers that allow you to make API calls to the Server Middleware.Composables use the exact mechanism to communicate with their corresponding platforms when you call their methods.
+#### Server Middleware
+    In Vue Storefront, there is a "proxy" between them called Server Middleware. Server Middleware is an Express.js server that exposes API endpoints defined in the extensions registered in the middleware.config.js file.
+   
+
+#### Sevice Providers
+     Server Middleware can communicate with various service providers as long as they expose an API. It can use industry-standard libraries like axios or Apollo or platform-specific JavaScript SDKs.
+
+##### DataFlow
+      In Vue Storefront, three applications exchange the data:
+>* Nuxt.js application - requests data from the Server Middleware when specific methods in the Application context or Composables are called.
+>* Server Middleware - accepts requests from the Nuxt.js application, converts them, and sends them to the given platform in the proper format and communication technology.
+>* Service providers - expose API endpoints to fetch, add and remove data.
+ 
+ 
+ ![middleware](https://user-images.githubusercontent.com/82566358/205515180-f6099caa-43a1-44bb-ae36-879ed157a319.png)
+
+#### Single Reponsibility (SOLID Principle)
     This means that the microservice interface should expose only access points that are relevant to the assigned function. And internally, the microservice should         have only assigned behavior.
     Providing a single responsibility means that microservices are easier to maintain and scale.
