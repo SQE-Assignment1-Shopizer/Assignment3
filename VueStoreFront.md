@@ -107,7 +107,23 @@ Micro Servicing and Modularity afftes the non functional requirements greatly
 Requirements
 >*  we need Yarn 1 
 >* Git
+
 To Check if you have the tools already installed or not
 
 ![middleware](https://user-images.githubusercontent.com/82566358/205516410-226976bc-bcca-44e9-9f28-972b9e288d80.png)
+
+Steps
+1.  fork our repository
+2.  install all necessary dependencies/tools i.e. eslint, husky by using command yarn install
+3.  Once your changes are ready, manually test them in development and production modes.
+4.  If the repository contains a Vue Storefront project (often called theme), run all the build commands defined in the package.json file and start the project to test it. If everything works as expected, you can go to the next section.
+5.  If there is no Vue Storefront project, create a new project using our Installation guide. Then, open its package.json file and look for the name of the package you modified in the dependencies or devDependencies. else  change the version to the link
+
+![middleware](https://user-images.githubusercontent.com/82566358/205516617-69244759-c358-47d3-af1a-4a44f1af6146.png)
+
+6. if it's an indirect dependency (dependency of another package) and not present in the package.json, use the Selective dependency resolutions
+7. Update unit and E2E tests by openning the package.json file and see if there are one or more test commands
+8. Update documentation 
+9. Commit and push your changes 
+10. Create Pull Request
 
