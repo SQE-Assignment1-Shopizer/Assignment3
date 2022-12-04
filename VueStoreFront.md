@@ -8,11 +8,13 @@ Vue Storefront is a standalone Progressive Web Application solution for web stor
  
  #### Prerequisites
  
->* Node.js latest version This includes a version manager, package manager, and Visual Studio Code. The Node Package Manager (npm) is used to install Vue.js.
+>* NodeJs v14 or latest version This includes a version manager, package manager, and Visual Studio Code. The Node Package Manager (npm) is used to install Vue.js.
 >* Vue.js framework
 >* Express.js for Server API
 >* Elastic Search
 >* Docker
+>* Vendure server running in localhost for GraphQL API or https://demo.vendure.io/shop-api
+>* Set up auth options in Vendure server (This functionality is available for those who scaffold a local instance of Vendure)
 
 ### Tools
 >* Vue CLI
@@ -73,3 +75,39 @@ Micro Servicing and Modularity afftes the non functional requirements greatly
 #### Single Reponsibility (SOLID Principle)
     This means that the microservice interface should expose only access points that are relevant to the assigned function. And internally, the microservice should         have only assigned behavior.
     Providing a single responsibility means that microservices are easier to maintain and scale.
+    
+ #### Open Source Contribution Requirements for developers
+ ##### main branch
+ 
+ The main branch contains the code for the latest released version. We update this branch only to:
+>* fix a bug present in the current version,
+>* release new minor- or patch-level version.
+
+ ##### develop branch
+ 
+ The develop branch contains the code for the next minor version. All new features, breaking changes, and bug fixes must be merged into this branch.
+
+ ##### To add a new feature
+>* Create a new branch from the develop branch.
+>* Work on the feature. 🔨
+>* Create a Pull Request targeted at the develop branch following our How to submit a Pull Request guide.
+
+##### To Fix a bug in the latest release
+>* Create a new branch from the main branch.
+>* Fix the bug. 🔨
+>* Create a Pull Request targeted at the main branch following our How to submit a Pull Request guide.
+>* If the bug is also present in the develop branch, create an additional Pull Request targeted at this branch.
+
+##### To Fix a bug in the develop branch
+>* Create a new branch from the develop branch.
+>* Fix the bug. 🔨
+>* Create a Pull Request targeted at the develop branch following our How to submit a Pull Request guide.
+
+##### Submitting a pull Request
+Requirements
+>*  we need Yarn 1 
+>* Git
+To Check if you have the tools already installed or not
+
+![middleware](https://user-images.githubusercontent.com/82566358/205516410-226976bc-bcca-44e9-9f28-972b9e288d80.png)
+
