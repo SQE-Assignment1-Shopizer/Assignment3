@@ -16,7 +16,7 @@ Vue Storefront is a standalone Progressive Web Application solution for web stor
 
 ### Tools
 >* Vue CLI
-    Vue CLI is a toolkit for working with Vue in your terminal / command line. It enables you to quickly scaffold a new project (vue create), prototype new ideas (vue serve), or manage projects using a graphical user interface (vue ui).
+   Vue CLI is a toolkit for working with Vue in your terminal / command line. It enables you to quickly scaffold a new project (vue create), prototype new ideas (vue serve), or manage projects using a graphical user interface (vue ui).
 >* Vue.js DevTools (to view component structiures and theircurrent state)
 >* Vetur extension (speeds up developement)
 >* add PWA plugin to Vuestore Front after installing Vue CLI
@@ -46,3 +46,7 @@ Micro Servicing and Modularity afftes the non functional requirements greatly
 
 >* ##### Fault Tolerance
          Improved fault isolation. For example, if there is a memory leak in one service then only that service will be affected. The other services will continue to handle requests. In comparison, one misbehaving component of a monolithic architecture can bring down the entire system.
+         
+ >* Single Reponsibility (SOLID Principles)
+    This means that the microservice interface should expose only access points that are relevant to the assigned function. And internally, the microservice should         have only assigned behavior.
+    Providing a single responsibility means that microservices are easier to maintain and scale.
