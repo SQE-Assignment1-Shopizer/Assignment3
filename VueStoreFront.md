@@ -27,6 +27,7 @@ Vue Storefront is a standalone Progressive Web Application solution for web stor
 >>>* A secure, HTTPS connection
 >* Vue Store Front only supports one CI/CD tool which is Githiub Actions
 
+
 ### MicroServices Architecture
 Vue Store Front has microservices architecture breaking it into multiple modules. Each module has its own specific responsibilities but communicates with others to form a unified system
 ![vue](https://user-images.githubusercontent.com/82566358/205505058-2a1e2824-1a1b-4205-ae26-733445ae0c5f.png)
@@ -64,6 +65,10 @@ Micro Servicing and Modularity afftes the non functional requirements greatly
  
  
  ![middleware](https://user-images.githubusercontent.com/82566358/205515180-f6099caa-43a1-44bb-ae36-879ed157a319.png)
+ 
+ 
+ ### Memory Consumption
+ The microservice architecture replaces N monolithic application instances with NxM services instances. If each service runs in its own JVM (or equivalent), which is usually necessary to isolate the instances, then there is the overhead of M times as many JVM runtimes. Moreover, if each service runs on its own VM (e.g. EC2 instance), as is the case at Netflix, the overhead is even higher.
 
 #### Single Reponsibility (SOLID Principle)
     This means that the microservice interface should expose only access points that are relevant to the assigned function. And internally, the microservice should         have only assigned behavior.
