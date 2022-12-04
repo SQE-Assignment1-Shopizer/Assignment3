@@ -21,10 +21,10 @@ Vue Storefront is a standalone Progressive Web Application solution for web stor
 >* Vetur extension (speeds up developement)
 >* add PWA plugin to Vuestore Front after installing Vue CLI
 >>* Requirements for PWA
->*** A JavaScript service worker (to allow the site to load offline and store data locally)
->*** A valid JSON manifest of the app’s info, with the correct info filled in
->*** A set of properly named icons, at multiple sizes
->*** A secure, HTTPS connection
+>>>* A JavaScript service worker (to allow the site to load offline and store data locally)
+>>>* A valid JSON manifest of the app’s info, with the correct info filled in
+>>>* A set of properly named icons, at multiple sizes
+>>>* A secure, HTTPS connection
 >* Vue Store Front only supports one CI/CD tool which is Githiub Actions
 
 ### MicroServices Architecture
