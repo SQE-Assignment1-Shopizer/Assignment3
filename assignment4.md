@@ -1,29 +1,29 @@
-##Project: Meeting Management Application
+## Project: Meeting Management Application
 
-###Project Description: 
+### Project Description: 
 This Application can be a tool used to send out meeting invitations to the participants as well as send them reminders before the meeting. The team leads can set up meetings with their teams. Furthermore, it will keep track of which participants were invited, who accepted, and who rejected the meeting invitation.
 
-###Documentation Requirements:
+### Documentation Requirements:
 
 1.There shall be user manuals with instructions to help users learn to use the application
 2.There shall be installation documentation that covers the prerequisites as well as the process of installing the application.
 3.There shall be developer documentation to help the developers understand where to contribute to the code and how to review the changes 
 4.There shall be a README.MD file with all the important instructions needed for the project.
 
-###Security Requirements:
+### Security Requirements:
 1.The system shall have authentication measures at all entry points so that only the logged-in users can access the data.
 2.The user accounts shall have limited privileges. Only the team leads will have the privilege to add or remove team members and view their meeting history. 
 3.The system shall lock an account to protect a user's information from potential hackers after a specific number of login attempts
 4.The system shall not sign up a user until the user creates a strong password. For example, a strong password might contain a certain number of characters and a capital letter.
 5.The system shall Only the users with the role “site admin” to view the applicant’s personal information and edit them
 
-###Reliability Requirements:
+### Reliability Requirements:
 1.The system shall apply load balancing 
 2.The system shall perform without failure in 90 percent of use cases during a month.
 3.The system shall allow applicants to resume their access 98% of the time without failure.
 
 
-###Performance Requirements: 
+### Performance Requirements: 
 1.System must load all pages in 2 seconds.
 2.Hardware should be compatible with the application // -iuhi
 3.The system shall give the last remainder at an appropriate time.
@@ -39,7 +39,7 @@ This Application can be a tool used to send out meeting invitations to the parti
 13.The application should support different environments like Android, iOs etc
 
 
-###Modularity Requirements
+### Modularity Requirements
 1.The application need to be homogeneous both for iOS and Android
 2.A native core module should be developed, which addresses needs common to all modules, and includes networking, internal and analytics events, security, dependencies injection, feature flag management etc.
 3.Feature Flags should be used, they allow to turn off module functionality at run time.
@@ -50,7 +50,7 @@ This Application can be a tool used to send out meeting invitations to the parti
 
  
 
-###Process Requirements
+### Process Requirements
 1.SCRUM Framework shall be used for the development of this Application
 2.Daily Meetings shall be scheduled with the stakeholders
 3.Scrum Master shall keep track that everyone is on track
@@ -64,7 +64,7 @@ This Application can be a tool used to send out meeting invitations to the parti
 
 
 
-###UI, Unit and API Test Automation Framework Requirements
+### UI, Unit and API Test Automation Framework Requirements
 1.The purpose of the API shall be defined
 2.Interactions with other APIS’s shall be defined
 3.Behaviour of the API shall be defined
